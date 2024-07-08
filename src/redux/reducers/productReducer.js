@@ -6,7 +6,7 @@ const initialState = {
     category: 'programmer'
 }
 
-export const productreducer = (state, {type, payload}) => {
+export const productreducer = (state = initialState, {type, payload}) => {
  
     switch (type) {
         case Actiontypes.SET_PRODUCTS:
